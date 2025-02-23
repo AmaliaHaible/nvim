@@ -19,8 +19,8 @@ return {
         quickfile = {},
     },
     keys = {
-        { "<leader>ff", function() Snacks.picker.smart() end,                   desc = "Smart Find Files" },
-        { "<leader>fF", function() Snacks.picker.files() end,                   desc = "Find Files" },
+        { "<leader>ff", function() Snacks.picker.files() end,                   desc = "Find Files" },
+        { "<leader>fF", function() Snacks.picker.smart() end,                   desc = "Smart Find Files" },
         { "<leader>fl", function() Snacks.picker.grep() end,                    desc = "Grep" },
         { "<leader>fc", function() Snacks.picker.command_history() end,         desc = "Command History" },
         { "<leader>fC", function() Snacks.picker.commands() end,                desc = "Commands" },

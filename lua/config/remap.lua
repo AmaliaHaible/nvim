@@ -1,7 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>ex", ":Neotree position=current<CR>")
-vim.keymap.set("n", "<leader>pv", ":Neotree position=current<CR>")
-vim.keymap.set("n", "<leader>es", ":Neotree toggle<CR>")
 vim.keymap.set("t", "<C-h>", "<C-\\><C-n>", { silent = true })
 vim.keymap.set("t", "<C-w>", "<C-\\><C-n><C-w>", {silent=true}) 
 vim.keymap.set('n', '<A-o>', '<CMD>lua require("FTerm").open()<CR>')
