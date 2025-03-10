@@ -215,6 +215,9 @@ return {
 					end,
 				},
 			})
+            -- require("lspconfig").clangd.setup{
+            --     cmd = {"clangd", "--completion-style=detailed", "--rename-file-limit=0", "--limit-results=0", "--limit-references=0"}
+            -- }
 		end,
 	},
 }
