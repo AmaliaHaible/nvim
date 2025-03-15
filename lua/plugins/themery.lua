@@ -4,7 +4,7 @@ return {
     config = function()
         require("themery").setup({
             themes = { "nightfox", "duskfox", "nordfox", "tokyonight", "tokyonight-moon", "tokyonight-storm",
-                    "catppuccin", "sonokai"},
+                    "catppuccin", "sonokai", "edge", "nord", "onedark"},
             livePreview = true,
 
         })

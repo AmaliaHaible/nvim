@@ -10,5 +10,4 @@ vim.opt.smartindent = true
 
 vim.opt.undofile = true
 vim.opt.termguicolors = true
-vim.g.sonokai_style = "andromeda"
 
