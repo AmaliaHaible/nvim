@@ -6,6 +6,7 @@ return {
         explorer = {
             replace_netrw = true,
         },
+        image = {},
         indent = {},
         lazygit = {},
         notifier = {},
