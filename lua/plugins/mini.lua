@@ -1,6 +1,6 @@
 return {
 	"echasnovski/mini.nvim",
-	version = "*",
+	version = false,
 	dependencies = {
 		{ "rafamadriz/friendly-snippets" },
 	},
@@ -29,8 +29,8 @@ return {
 		})
 		require("mini.completion").setup({
 			mappings = {
-				scroll_down = "<Down>",
-				scroll_up = "<Up>",
+				scroll_down = "<S-Down>",
+				scroll_up = "<S-Up>",
 			},
 		})
 		local hipatterns = require("mini.hipatterns")
