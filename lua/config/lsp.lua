@@ -4,4 +4,5 @@ vim.lsp.enable({
 	"zig",
     "c",
     "python",
+    "ocaml",
 })
