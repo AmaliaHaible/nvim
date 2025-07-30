@@ -29,6 +29,8 @@ vim.keymap.set("v", "<", "<gv", { desc = "Indent left and reselect" })
 vim.keymap.set("v", ">", ">gv", { desc = "Indent right and reselect" })
 
 
+
+
 -- LSP Related
 vim.api.nvim_create_autocmd("LspAttach", {
 	desc = "LSP actions",

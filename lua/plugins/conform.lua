@@ -14,7 +14,7 @@ return { -- Autoformat
         },
     },
     opts = {
-        notify_on_error = false,
+        notify_on_error = true,
         format_on_save = false,
         formatters_by_ft = {
             lua = { 'stylua' },
@@ -25,6 +25,14 @@ return { -- Autoformat
             javascript = { "prettierd", "prettier", stop_after_first = true },
             rust = { "rustfmt", lsp_format = "fallback" },
         },
+        formatters = {
+            black = {
+                append_args = {"-l" ,"180"}
+            },
+            stylua = {
+                append_args = {"--column-width", "180"}
+            }
 
+        }
     },
 }

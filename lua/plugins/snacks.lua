@@ -20,8 +20,8 @@ return {
         quickfile = {},
     },
     keys = {
-        { "<leader>ff", function() Snacks.picker.files() end,                                   desc = "Find Files" },
-        { "<leader>fF", function() Snacks.picker.smart() end,                                   desc = "Smart Find Files" },
+        { "<leader>fF", function() Snacks.picker.files() end,                                   desc = "Find Files" },
+        { "<leader>ff", function() Snacks.picker.smart({multi={"buffers", "files"}}) end,       desc = "Smart Find Files" },
         { "<leader>fl", function() Snacks.picker.grep() end,                                    desc = "Grep" },
         -- { "<leader>fh", function() Snacks.picker.command_history() end,                         desc = "Command History" },
         -- { "<leader>fC", function() Snacks.picker.commands() end,                                desc = "Commands" },
@@ -31,6 +31,13 @@ return {
         { "<leader>fD", function() Snacks.picker.diagnostics_buffer() end,                      desc = "Buffer Diagnostics" },
         { "<leader>ex", function() Snacks.explorer() end,                                       desc = "File Explorer" },
         { "<leader>er", function() Snacks.explorer.reveal() end,                                desc = "Reveal File" },
+        -- find
+        { "<leader>fb", function() Snacks.picker.buffers() end,                                 desc = "Buffers" },
+        { "<leader>fc", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
+        { "<leader>fg", function() Snacks.picker.git_files() end,                               desc = "Find Git Files" },
+        { "<leader>fp", function() Snacks.picker.projects() end,                                desc = "Projects" },
+        { "<leader>fr", function() Snacks.picker.recent() end,                                  desc = "Recent" },
+        { "<leader>ft", function() Snacks.picker.treesitter() end,                              desc = "Treesitter" },
         -- git
         { "<leader>gb", function() Snacks.picker.git_branches() end,                            desc = "Git Branches" },
         { "<leader>gl", function() Snacks.picker.git_log() end,                                 desc = "Git Log" },
@@ -48,13 +55,6 @@ return {
         { "<leader>lr", function() Snacks.picker.lsp_references() end,                          nowait = true,                     desc = "References" },
         { "<leader>lI", function() Snacks.picker.lsp_implementations() end,                     desc = "Goto Implementation" },
         { "<leader>ly", function() Snacks.picker.lsp_type_definitions() end,                    desc = "Goto T[y]pe Definition" },
-
-        -- find
-        { "<leader>fb", function() Snacks.picker.buffers() end,                                 desc = "Buffers" },
-        { "<leader>fc", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
-        { "<leader>fg", function() Snacks.picker.git_files() end,                               desc = "Find Git Files" },
-        { "<leader>fp", function() Snacks.picker.projects() end,                                desc = "Projects" },
-        { "<leader>fr", function() Snacks.picker.recent() end,                                  desc = "Recent" },
 
         -- { "<leader>sb", function() Snacks.picker.lines() end,                                   desc = "Buffer Lines" },
         { "<leader>sB", function() Snacks.picker.grep_buffers() end,                            desc = "Grep Open Buffers" },
@@ -80,6 +80,7 @@ return {
         { "<leader>sp", function() Snacks.picker.lazy() end,                                    desc = "Search for Plugin Spec" },
         { "<leader>sq", function() Snacks.picker.qflist() end,                                  desc = "Quickfix List" },
         { "<leader>sR", function() Snacks.picker.resume() end,                                  desc = "Resume" },
+        { "<leader>ss", function() Snacks.picker.spelling() end,                                desc = "Spelling" },
         { "<leader>su", function() Snacks.picker.undo() end,                                    desc = "Undo History" },
         { "<leader>sT", function() Snacks.picker.colorschemes() end,                            desc = "Colorschemes" },
 
