@@ -9,7 +9,7 @@ return {
     },
     config = function ()
         require("overseer").setup({
-            template = {"builtin", "user.clangpp_build", "user.example"}
+            templates = {"builtin", "cpp", }
         })
     end
 }

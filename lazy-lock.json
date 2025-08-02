@@ -1,4 +1,5 @@
 {
+  "ale": { "branch": "master", "commit": "3d68ec78572059b1bdb5f2f3fb85942e8627e118" },
   "catppuccin": { "branch": "main", "commit": "f67971cd3e30dd94061da8d61ee34742d43c632a" },
   "conform.nvim": { "branch": "master", "commit": "973f3cb73887d510321653044791d7937c7ec0fa" },
   "edge": { "branch": "master", "commit": "b279ccb1205a51eab8a513b6a3d123b25ac83394" },
