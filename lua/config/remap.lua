@@ -28,9 +28,6 @@ vim.keymap.set("v", "<A-Up>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" }
 vim.keymap.set("v", "<", "<gv", { desc = "Indent left and reselect" })
 vim.keymap.set("v", ">", ">gv", { desc = "Indent right and reselect" })
 
-
-
-
 -- LSP Related
 vim.api.nvim_create_autocmd("LspAttach", {
 	desc = "LSP actions",
@@ -48,6 +45,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "<F4>", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
 	end,
 })
+
+vim.api.nvim_create_user_command("LspRestart", function()
+	vim.lsp.stop_client(vim.lsp.get_active_clients())
+	vim.cmd("edit")
+end, {})
 
 --------- snacks terminal overlay
 local term = require("snacks.terminal")

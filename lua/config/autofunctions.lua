@@ -4,6 +4,14 @@ vim.keymap.set("n", "<leader>pa", function()
 	print("file:", path)
 end)
 
+-- vim.api.nvim_create_autocmd("BufEnter", {
+--   callback = function()
+--     local ft = vim.bo.filetype
+--     print("BufEnter:", ft)
+--   end,
+-- })
+
+
 local augroup = vim.api.nvim_create_augroup("UserConfig", {})
 
 -- Highlight yanked text
