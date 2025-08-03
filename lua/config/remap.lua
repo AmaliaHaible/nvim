@@ -32,7 +32,7 @@ vim.keymap.set("n", "<leader>Y", function()
 	local path = vim.fn.expand("%:p")
 	vim.fn.setreg("+", path)
 	print("file:", path)
-end)
+end, {desc = "Copy Filepath to Clipboard"})
 
 -- yank to / paste from system clipboard, delete to void
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
