@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>pa", function()
+vim.keymap.set("n", "<leader>P", function()
 	local path = vim.fn.expand("%:p")
 	vim.fn.setreg("+", path)
 	print("file:", path)

@@ -30,7 +30,7 @@ return {
 				enabled = true,
 			},
 		},
-		-- signature = { enabled = true },
+		signature = { enabled = true },
 
         snippets = { preset = 'mini_snippets' },
 
