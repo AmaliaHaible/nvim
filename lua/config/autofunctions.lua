@@ -1,3 +1,9 @@
+vim.keymap.set("n", "<leader>P", function()
+	local path = vim.fn.expand("%:p")
+	vim.fn.setreg("+", path)
+	print("file:", path)
+end)
+
 -- vim.api.nvim_create_autocmd("BufEnter", {
 --   callback = function()
 --     local ft = vim.bo.filetype
