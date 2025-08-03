@@ -15,24 +15,24 @@ return {
 		-- local gen_loader = require('mini.snippets').gen_loader
 		require("mini.snippets").setup({
 			--[[ snippets = {
-                -- Load custom file with global snippets first (adjust for Windows)
-                gen_loader.from_file('~/.config/nvim/snippets/global.json'),
+		              -- Load custom file with global snippets first (adjust for Windows)
+		              gen_loader.from_file('~/.config/nvim/snippets/global.json'),
 
-                -- Load snippets based on current language by reading files from
-                -- "snippets/" subdirectories from 'runtimepath' directories.
-                gen_loader.from_lang(),
-            }, ]]
+		              -- Load snippets based on current language by reading files from
+		              -- "snippets/" subdirectories from 'runtimepath' directories.
+		              gen_loader.from_lang(),
+		          }, ]]
 			mappings = {
 				jump_next = "<Tab>",
 				jump_prev = "<S-Tab>",
 			},
 		})
-		require("mini.completion").setup({
-			mappings = {
-				scroll_down = "<S-Down>",
-				scroll_up = "<S-Up>",
-			},
-		})
+		-- require("mini.completion").setup({
+		-- 	mappings = {
+		-- 		scroll_down = "<S-Down>",
+		-- 		scroll_up = "<S-Up>",
+		-- 	},
+		-- })
 		local hipatterns = require("mini.hipatterns")
 		hipatterns.setup({
 			highlighters = {
@@ -46,7 +46,7 @@ return {
 			},
 		})
 
-		vim.cmd([[au FileType snacks_picker_input lua vim.b.minicompletion_disable = true]])
-		vim.cmd([[au FileType fff_input lua vim.b.minicompletion_disable = true]])
+		-- vim.cmd([[au FileType snacks_picker_input lua vim.b.minicompletion_disable = true]])
+		-- vim.cmd([[au FileType fff_input lua vim.b.minicompletion_disable = true]])
 	end,
 }
