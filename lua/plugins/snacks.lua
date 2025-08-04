@@ -20,7 +20,7 @@ return {
         quickfile = {},
     },
     keys = {
-        { "<leader>fa", function() Snacks.picker.autocmds() end,                                desc = "Autocmds" },
+        -- { "<leader>fa", function() Snacks.picker.autocmds() end,                                desc = "Autocmds" },
         { "<leader>fb", function() Snacks.picker.buffers() end,                                 desc = "Buffers" },
         { "<leader>fB", function() Snacks.picker.lines() end,                                   desc = "Buffer Lines" },
         { "<leader>fc", function() Snacks.picker.command_history() end,                         desc = "Command History" },
@@ -41,15 +41,18 @@ return {
         { "<leader>fL", function() Snacks.picker.grep_buffers() end,                            desc = "Grep Open Buffers" },
         { "<leader>fm", function() Snacks.picker.marks() end,                                   desc = "Marks" },
         { "<leader>fM", function() Snacks.picker.man() end,                                     desc = "Man Pages" },
-        { "<leader>fp", function() Snacks.picker.projects() end,                                desc = "Projects" },
+        { "<leader>fn", function() Snacks.picker.notifications() end,                           desc = "Notifications" },
+        -- { "<leader>fp", function() Snacks.picker.projects() end,                                desc = "Projects" },
+        { "<leader>fP", function() Snacks.picker.pickers() end,                                 desc = "Pickers" },
         { "<leader>fq", function() Snacks.picker.qflist() end,                                  desc = "Quickfix List" },
         { "<leader>fQ", function() Snacks.picker.loclist() end,                                 desc = "Location List" },
         { "<leader>fr", function() Snacks.picker.recent() end,                                  desc = "Recent" },
-        { "<leader>fR", function() Snacks.picker.resume() end,                                  desc = "Resume" },
+        -- { "<leader>fR", function() Snacks.picker.resume() end,                                  desc = "Resume" },
         { "<leader>ft", function() Snacks.picker.treesitter() end,                              desc = "Treesitter" },
         { "<leader>fT", function() Snacks.picker.colorschemes() end,                            desc = "Colorschemes" },
         { "<leader>fu", function() Snacks.picker.undo() end,                                    desc = "Undo History" },
         { "<leader>fw", function() Snacks.picker.grep_word() end,                               desc = "Visual selection or word", mode = { "n", "x" } },
+        { "<leader>fz", function() Snacks.picker.zoxide() end,                                  desc = "Zoxide Projects" },
 
         { '<leader>f"', function() Snacks.picker.registers() end,                               desc = "Registers" },
         { '<leader>f/', function() Snacks.picker.search_history() end,                          desc = "Search History" },
@@ -75,6 +78,7 @@ return {
         { "<leader>lr", function() Snacks.picker.lsp_references() end,                          nowait = true,                     desc = "References" },
         { "<leader>li", function() Snacks.picker.lsp_implementations() end,                     desc = "Goto Implementation" },
         { "<leader>lt", function() Snacks.picker.lsp_type_definitions() end,                    desc = "Goto T[y]pe Definition" },
+        { "<leader>lc", function() Snacks.picker.lsp_config() end,                              desc = "LSP Configs" },
 
 
     }

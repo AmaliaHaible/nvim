@@ -12,7 +12,7 @@ vim.lsp.enable({
 	"lua_ls",
 	"rust_analyzer",
 	"zls",
-	"clangd",
+	"clangd", -- DO NOT INSTALL VIA MASON ON WINDOWS
 	"basedpyright",
 	"ocamllsp",
 	"gopls",

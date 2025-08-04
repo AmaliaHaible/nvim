@@ -5,7 +5,7 @@ return { -- Autoformat
 	cmd = { "ConformInfo" },
 	keys = {
 		{
-			"<leader>fm",
+			"<leader>lf",
 			function()
 				require("conform").format({ async = true, lsp_format = "fallback" })
 			end,
@@ -36,8 +36,8 @@ return { -- Autoformat
 			},
 			["clang-format"] = {
 				prepend_args = {
-					'--style={BasedOnStyle: GNU, IndentWidth: 4, ColumnLimit: 160}',
-					"--verbose",
+					'--style={BasedOnStyle: LLVM, IndentWidth: 4, ColumnLimit: 160}', -- this is does not work with fallback-style so i ignore .clang-format
+					-- "--verbose",
 				},
 			},
 		},
