@@ -58,10 +58,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
-vim.api.nvim_create_user_command("LspRestart", function()
-	vim.lsp.stop_client(vim.lsp.get_active_clients())
-	vim.cmd("edit")
-end, {})
+-- vim.api.nvim_create_user_command("LspRestart", function()
+-- 	vim.lsp.stop_client(vim.lsp.get_active_clients())
+-- 	vim.cmd("edit")
+-- end, {})
 
 --------- snacks terminal overlay
 local term = require("snacks.terminal")
