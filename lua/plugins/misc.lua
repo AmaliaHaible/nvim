@@ -12,4 +12,13 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 	},
+	{
+		"lewis6991/gitsigns.nvim",
+	},
+	{
+		"j-hui/fidget.nvim",
+		opts = {
+			-- options
+		},
+	},
 }

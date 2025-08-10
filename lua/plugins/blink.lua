@@ -15,16 +15,16 @@ return {
 		--
 		-- See :h blink-cmp-config-keymap for defining your own keymap
 		keymap = {
-			preset = "enter",
-			["C-enter"] = { "select_and_accept", "fallback" },
+			preset = "default",
+			-- ["C-enter"] = { "select_and_accept", "fallback" },
 		},
-		appearance = { nerd_font_variant = "mono", use_nvim_cmp_as_default = false },
+		appearance = { nerd_font_variant = "mono", use_nvim_cmp_as_default = true },
 
 		-- (Default) Only show the documentation popup when manually triggered
 		completion = {
 			documentation = { auto_show = true },
 			list = {
-				selection = { preselect = false, auto_insert = false },
+				selection = { preselect = true, auto_insert = false },
 			},
 			ghost_text = {
 				enabled = true,

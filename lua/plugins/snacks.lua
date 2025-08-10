@@ -77,8 +77,8 @@ return {
         { "<leader>lD", function() Snacks.picker.lsp_declarations() end,                        desc = "Goto Declaration" },
         { "<leader>lr", function() Snacks.picker.lsp_references() end,                          nowait = true,                     desc = "References" },
         { "<leader>li", function() Snacks.picker.lsp_implementations() end,                     desc = "Goto Implementation" },
-        { "<leader>lt", function() Snacks.picker.lsp_type_definitions() end,                    desc = "Goto T[y]pe Definition" },
-        { "<leader>lc", function() Snacks.picker.lsp_config() end,                              desc = "LSP Configs" },
+        { "<leader>lt", function() Snacks.picker.lsp_type_definitions() end,                    desc = "Goto Type Definition" },
+        { "<leader>lC", function() Snacks.picker.lsp_config() end,                              desc = "LSP Configs" },
 
 
     }

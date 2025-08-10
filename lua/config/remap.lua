@@ -58,6 +58,13 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end,
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = {"c", "cpp"},
+    callback = function ()
+        vim.keymap.set("n", "<leader>lc", ":LspClangdSwitchSourceHeader<cr>")
+    end
+})
+
 -- vim.api.nvim_create_user_command("LspRestart", function()
 -- 	vim.lsp.stop_client(vim.lsp.get_active_clients())
 -- 	vim.cmd("edit")

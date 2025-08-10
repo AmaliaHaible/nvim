@@ -13,9 +13,11 @@ vim.lsp.enable({
 	"rust_analyzer",
 	"zls",
 	"clangd", -- DO NOT INSTALL VIA MASON ON WINDOWS
+    "autotools_ls",
 	"basedpyright",
-	"ocamllsp",
+	-- "ocamllsp",
 	"gopls",
+    "ts_ls",
 })
 
 vim.lsp.config("lua_ls", {
