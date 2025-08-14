@@ -10,7 +10,7 @@ return { -- Autoformat
 				require("conform").format({ async = true, lsp_format = "fallback" })
 			end,
 			mode = "",
-			desc = "[F]ormat buffer",
+			desc = "Format buffer",
 		},
 	},
 	opts = {
@@ -22,7 +22,7 @@ return { -- Autoformat
 			python = { "isort", "black" },
 			--
 			-- You can use 'stop_after_first' to run the first available formatter from the list
-			javascript = { "prettierd", "prettier", stop_after_first = true },
+			javascript = { "prettier", stop_after_first = true },
 			rust = { "rustfmt", lsp_format = "fallback" },
 			c = { "clang-format" },
 			cpp = { "clang-format" },
@@ -40,6 +40,11 @@ return { -- Autoformat
 					-- "--verbose",
 				},
 			},
+            prettier = {
+                prepend_args = {
+                    "--tab-width 4"
+                }
+            }
 		},
 	},
 }

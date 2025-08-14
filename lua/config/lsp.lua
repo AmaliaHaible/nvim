@@ -18,6 +18,8 @@ vim.lsp.enable({
 	-- "ocamllsp",
 	"gopls",
     "ts_ls",
+    "html",
+    "json",
 })
 
 vim.lsp.config("lua_ls", {
