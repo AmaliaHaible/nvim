@@ -20,6 +20,7 @@ vim.lsp.enable({
     "ts_ls",
     "html",
     "json",
+    "tinymist",
 })
 
 vim.lsp.config("lua_ls", {
@@ -35,3 +36,4 @@ vim.lsp.config("lua_ls", {
 vim.lsp.config("clangd", {
 	cmd = { "clangd", "--rename-file-limit=200", "--enable-config" },
 })
+vim.lsp.config("tinymist", {settings = {formatterMode = "typstyle"}})

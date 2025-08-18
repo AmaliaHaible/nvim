@@ -16,6 +16,9 @@ return {
 		-- See :h blink-cmp-config-keymap for defining your own keymap
 		keymap = {
 			preset = "default",
+            -- ["C-space"] = false,
+            -- ["C-s"] = {"show", "show_documentation", "hide_documentation"},
+
 			-- ["C-enter"] = { "select_and_accept", "fallback" },
 		},
 		appearance = { nerd_font_variant = "mono", use_nvim_cmp_as_default = true },
